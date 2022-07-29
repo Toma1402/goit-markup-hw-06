@@ -660,7 +660,9 @@ textarea.input-field {
   color: var(--secondary-text-color);
 }
 .text-label {
+  outline: 1px solid red;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -674,14 +676,25 @@ textarea.input-field {
   height: 15px;
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
+  transition: border-color var(--cubic), background-color var(--cubic);
 }
-.checkbox:checked + .icon-check {
+.icon-checked {
+  outline: 1px solid red;
+  position: absolute;
+  top: 4px;
+  left: 20px;
+}
+.checkbox:checked ~ .icon-check {
   background-color: var(--accent-cl);
-  background-image: url(../images/hw06/icon-check.svg);
+
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-cl);
 }
+.agree {
+  margin: 0;
+}
+
 .send {
   display: block;
   margin-left: auto;
