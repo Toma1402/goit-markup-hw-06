@@ -416,7 +416,7 @@ img {
 .title-mailing {
   margin: 0;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: calc(16 / 14);
   text-transform: uppercase;
   color: var(--white);
@@ -608,7 +608,7 @@ textarea {
   resize: none;
 }
 .modal-form {
-  margin: 40px;
+  padding: 40px;
 }
 .group-field {
   margin-bottom: 20px;
@@ -689,6 +689,10 @@ textarea.input-field {
   background-origin: border-box;
   border-color: var(--accent-cl);
 }
+.checkbox:focus ~ .icon-check {
+  border-color: var(--accent-cl);
+  background-color: var(--accent-cl);
+}
 .agree {
   margin: 0;
 }
@@ -733,6 +737,7 @@ textarea.input-field {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
   transition: outline var(--cubic);
 }
 .btn-mailing {
