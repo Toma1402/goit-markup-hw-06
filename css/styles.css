@@ -689,9 +689,12 @@ textarea.input-field {
   background-origin: border-box;
   border-color: var(--accent-cl);
 }
-.checkbox:focus ~ .icon-check {
+
+.icon-checked:hover ~ .icon-check {
   border-color: var(--accent-cl);
-  background-color: var(--accent-cl);
+}
+.icon-checked:focus {
+  outline: var(--accent-cl);
 }
 .agree {
   margin: 0;
