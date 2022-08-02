@@ -690,12 +690,11 @@ textarea.input-field {
   border-color: var(--accent-cl);
 }
 
-.icon-checked:hover ~ .icon-check {
+.text-label:hover > .icon-check,
+.text-label:focus-within > .icon-check {
   border-color: var(--accent-cl);
 }
-.icon-checked:focus {
-  outline: var(--accent-cl);
-}
+
 .agree {
   margin: 0;
 }
